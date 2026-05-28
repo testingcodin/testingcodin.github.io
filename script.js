@@ -1,14 +1,13 @@
 var task;
 function addtask() {
-    const newtask = document.getElementById('task')
-    const tasks =[];
+    var newtask = document.getElementById('task')
+    var tasks =[];
     if (tasks.length > 0) {
        tasks[tasks.length] = newtask;
-    }
-    else {
-        tasks = [newtask];
-    }
-    localStorage.setItem('todolist', JSON.stringify(tasks))    
+    }   else {
+            tasks = [newtask];
+        }
+    localStorage.setItem('todolist', JSON.stringify(tasks));    
 };
 const add = document.getElementById('add');
-add.addEventListener('click', addtask) ;
+add.addEventListener('click', addtask);
