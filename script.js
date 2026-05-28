@@ -1,6 +1,6 @@
 var task;
 function addtask() {
-    var newtask = document.getElementById('task')
+    var newtask = document.getElementById('task').value;
     var tasks =[];
     if (tasks.length > 0) {
        tasks[tasks.length] = newtask;
