@@ -1,7 +1,10 @@
-var task;
+var tasks = [];
 function addtask() {
     var newtask = document.getElementById('task').value;
-    var tasks;
+    if (localStorage.todolist == null){
+        tasks = ["short"];
+        tasks.length = 0;
+    }
     if (tasks.length > 0) {
        tasks[tasks.length] = newtask;
     }   else {
